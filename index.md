@@ -1,16 +1,5 @@
-Hello, world!
- **hello**
- *hello*
- # hello
- ## hello
- 
-** test
-# test
+# Jennifer Yu Lab Reports
 
-[Lab Report 1](lab-report-1-week-2.html)
-[Lab Report 1](https://jhxyjhxy.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
-* test1
-* test2
-* test3
+## View Lab Reports
+* [Week 2](lab-report-1-week-2.html)
 
-# test
