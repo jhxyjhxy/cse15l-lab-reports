@@ -1,5 +1,3 @@
-Overall, make sure you have at least 6 screenshots, one for each of the steps below (though more is useful, remember that this will help out your future self). For each step include 2-3 sentences or bullet points describing what you did.
-
 ## 1. Installing VSCode
 > Start by going to the Visual Studio Code's website ([Download VSCode](https://code.visualstudio.com/Download)) to find instructions to download and install it on your system. After successfully installing VSCode, you should have a window similar to the picture below!
 <br><br>
@@ -12,7 +10,7 @@ Overall, make sure you have at least 6 screenshots, one for each of the steps be
 <br><br>
 Next, find your course-specific account and reset its password using UCSD's ETS site. ([Find your account](https://sdacs.ucsd.edu/~icc/index.php)) Using a VSCode terminal, type the following command (replacing the `cs15lwi22asz` with your course-specific account):
 <br><br>
-<mark>`ssh cs15lwi22asz@ieng6.ucsd.edu`</mark>
+`ssh cs15lwi22asz@ieng6.ucsd.edu`
 <br><br>
 There will most likely be a message asking if you're sure you want to connect, since it is your first time connecting to this server. Since you do want to, type `yes`, and press the enter key. Enter your password when prompted, then the terminal will output something like this:
 <br><br>
@@ -39,8 +37,30 @@ There will most likely be a message asking if you're sure you want to connect, s
 
 
 ## 4. Moving Files with scp
-
-
+> This step explains how to copy a file, or files, from your local machine to a remote one using the `scp` command. We can start by making a new local file (on your computer). We'll call it `WhereAmI.java` and put some code in it:
+>
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+>
+> Compile and run this code (`javac` and `java`, respectively) on your machine to see what it says. 
+<br><br>
+> Now we can use the `scp` command! In your terminal type the following (again, using your account name instead):
+<br><br>
+`scp WhereAmI.java cs15lwi22asz@ieng6.ucsd.edu:~/`
+<br><br>
+> To check if the file was properly copied over, log into your account using the `ssh` command and use the `ls` command to check if it's there. Now, you can compile and run the code on the server using the same commands you used to locally run it. 
+<br><br>
+> Hopefully, you'll see something like this after compiling and running `WhereAmI.java`:
+<br><br>
+![Image](photos/scp.png "scp example")
 
 ## 5. Setting an SSH Key
 
