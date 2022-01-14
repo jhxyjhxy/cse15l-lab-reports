@@ -12,7 +12,7 @@ Overall, make sure you have at least 6 screenshots, one for each of the steps be
 <br><br>
 Next, find your course-specific account and reset its password using UCSD's ETS site. ([Find your account](https://sdacs.ucsd.edu/~icc/index.php)) Using a VSCode terminal, type the following command (replacing the `cs15lwi22asz` with your course-specific account):
 <br><br>
-`ssh cs15lwi22asz@ieng6.ucsd.edu`
+<mark>`ssh cs15lwi22asz@ieng6.ucsd.edu`</mark>
 <br><br>
 There will most likely be a message asking if you're sure you want to connect, since it is your first time connecting to this server. Since you do want to, type `yes`, and press the enter key. Enter your password when prompted, then the terminal will output something like this:
 <br><br>
