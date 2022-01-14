@@ -63,7 +63,13 @@ class WhereAmI {
 ![Image](photos/scp.png "scp example")
 
 ## 5. Setting an SSH Key
+> As you may have noticed, every time we log into our accounts using `ssh`, we have to enter our password (without being able to see it too). We can avoid this by using something called `ssh` keys
 
+talk about ssh keygen BRIEFLY
+there are extra steps for windows users
+steps for moving public .ssh file
+describe jumble of letters numbers symbols for key randomart, key fingerprint
 
+![Image](photos/ssh_key.png "Password not required anymore!")
 
 ## 6. Optimizing Remote Connecting
