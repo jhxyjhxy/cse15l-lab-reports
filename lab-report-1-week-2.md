@@ -63,13 +63,24 @@ class WhereAmI {
 ![Image](photos/scp.png "scp example")
 
 ## 5. Setting an SSH Key
-> As you may have noticed, every time we log into our accounts using `ssh`, we have to enter our password (without being able to see it too). We can avoid this by using something called `ssh` keys
-
-talk about ssh keygen BRIEFLY
-there are extra steps for windows users
-steps for moving public .ssh file
-describe jumble of letters numbers symbols for key randomart, key fingerprint
-
+> As you may have noticed, every time we log into our accounts using `ssh`, we have to enter our password (without being able to see it too). We can avoid this by using something called `ssh` keys. To start, type the command: 
+<br><br>
+`ssh-keygen`
+<br><br>
+> It will prompt you to enter which file to save the key. You can enter the suggested one, shown in parentheses, or you can choose a different place. When done press enter. Next, it will ask you to make a password. Enter one or just press enter if you don't want one. 
+<br><br>
+> Now, we created both a public key and a private key file ("id_rsa" and "id_rsa.pub" respectively) stored under ".ssh" on your computer. The output from the `ssh-keygen` command probably looks like a jumble of letters, numbers, and symbols as your key's fingerprint, and its randomart image.
+> For Windows users, there are extra steps involving the command `ssh-add`. [ssh-add steps](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+<br><br>
+> Using the `scp` command, we can copy the public one to the server (your course account) and keep the private one on the client (your machine). Start by `ssh`'ing into your remote account, enter the password, and create a new directory called ".ssh" (`mkdir .ssh`). Now logout of your account (`logout`). We can use the following command to copy the public key file into the new directory.
+<br><br>
+`scp /Users/jhxyjhxy/.ssh/id_rsa.pub cs15lwi22asz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+<br><br>
+> Now you can log into your account through `ssh` without entering your password!
+<br><br>
 ![Image](photos/ssh_key.png "Password not required anymore!")
 
 ## 6. Optimizing Remote Connecting
+> Using everything we've used so far, we can try making up new ways to make `ssh`'ing easier and faster, while compiling and running our code remotely. Terminal commands like `ls` and `cd` along with keyboard shortcuts (Ctrl + c, Ctrl + v) make it easier for us to test/run/submit our code. 
+<br><br>
+![Image](photos/optimizing.png "Helpful commands!")
