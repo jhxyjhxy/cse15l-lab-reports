@@ -72,9 +72,9 @@ class WhereAmI {
 > Now, we created both a public key and a private key file ("id_rsa" and "id_rsa.pub" respectively) stored under ".ssh" on your computer. The output from the `ssh-keygen` command probably looks like a jumble of letters, numbers, and symbols as your key's fingerprint, and its randomart image.
 > For Windows users, there are extra steps involving the command `ssh-add`. [ssh-add steps](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 <br><br>
-> Using the `scp` command, we can copy the public one to the server (your course account) and keep the private one on the client (your machine). Start by `ssh`'ing into your remote account, enter the password, and create a new directory called ".ssh" (`mkdir .ssh`). Now logout of your account (`logout`). We can use the following command to copy the public key file into the new directory.
+> Using the `scp` command, we can copy the public one to the server (your course account) and keep the private one on the client (your machine). Start by `ssh`'ing into your remote account, enter the password, and create a new directory called ".ssh" (`mkdir .ssh`). Now logout of your account (`logout`). We can use the following command to copy the public key file into the new directory (replacing the account with your course-specific account and your-username with your username on your machine).
 <br><br>
-`scp /Users/jhxyjhxy/.ssh/id_rsa.pub cs15lwi22asz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+`scp /Users/<your-username>/.ssh/id_rsa.pub cs15lwi22asz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 <br><br>
 > Now you can log into your account through `ssh` without entering your password!
 <br><br>
