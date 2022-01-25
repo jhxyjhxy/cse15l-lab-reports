@@ -91,6 +91,6 @@ class WhereAmI {
 <br><br>
 `ssh cs15lwi22asz@ieng6.ucsd "scp WhereAmI.java; javac WhereAmI.java; java WhereAmI"`
 <br><br>
-ssh's into your course account, copies the file to the account, compiles, and runs the file all in one line with about 80 keystrokes, if you type all of it out. Using the mouse to select the text and keyboard shortcuts like "Ctrl + c" and "Ctrl + v" to copy and paste certain parts ("`WhereAmI`" or "`ssh cs15lwi22asz@ieng6.ucsd.edu`" from previous commands) you can greatly reduced the amount of keystrokesto about 30. 
+ssh's into your course account, copies the file to the account, compiles, and runs the file all in one line with about 80 keystrokes, if you type all of it out. Using the mouse to select the text and keyboard shortcuts like "Ctrl + c" and "Ctrl + v" to copy and paste certain parts ("`WhereAmI`" or "`ssh cs15lwi22asz@ieng6.ucsd.edu`" from previous commands) you can greatly reduce the amount of keystrokes to about 30. 
 <br><br>
 ![Image](photos/step7.png "Example of using one line")
