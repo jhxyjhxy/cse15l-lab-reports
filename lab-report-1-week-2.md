@@ -1,3 +1,5 @@
+# Lab Report 1: Week 2
+
 ## 1. Installing VSCode
 > Start by going to the Visual Studio Code's website ([Download VSCode](https://code.visualstudio.com/Download)) to find instructions to download and install it on your system. After successfully installing VSCode, you should have a window similar to the picture below!
 <br><br>
@@ -84,3 +86,11 @@ class WhereAmI {
 > Using everything we've used so far, we can try making up new ways to make `ssh`'ing easier and faster, while compiling and running our code remotely. Terminal commands like `ls` and `cd` along with keyboard shortcuts (Ctrl + c, Ctrl + v) make it easier for us to test/run/submit our code. 
 <br><br>
 ![Image](photos/optimizing.png "Helpful commands!")
+<br><br>
+> We can use such shortcuts to keep our keystroke count low. In addition to the terminal commands and keyboard shortcuts, we can run multiple commands in one line using semicolons and quotation marks. For example:
+<br><br>
+`ssh cs15lwi22asz@ieng6.ucsd "scp WhereAmI.java; javac WhereAmI.java; java WhereAmI"`
+<br><br>
+ssh's into your course account, copies the file to the account, compiles, and runs the file all in one line with about 80 keystrokes, if you type all of it out. Using the mouse to select the text and keyboard shortcuts like "Ctrl + c" and "Ctrl + v" to copy and paste certain parts ("`WhereAmI`" or "`ssh cs15lwi22asz@ieng6.ucsd.edu`" from previous commands) you can greatly reduced the amount of keystrokesto about 30. 
+<br><br>
+![Image](photos/step7.png "Example of using one line")
