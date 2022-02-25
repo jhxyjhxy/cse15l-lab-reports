@@ -16,6 +16,10 @@
 <br><br>
 - My repo's test result: The test failed because our code doesn't handle how code blocks could affect the URL.<br>
 ![failed test](photos/snippet1_my.png)
-
 <br><br>
-### Reviewed Repo
+- Reviewed repo's test result: The test failed as well because their code similarly doesn't handle how code blocks affect the URL. <br>
+![failed test](photos/snippet1_other.png)
+<br><br>
+- I think there is a small code change that would make the program work for this snippet. The program could include an indexOf check for the "`" character. 
+
+Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
