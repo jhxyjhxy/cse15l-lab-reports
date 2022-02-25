@@ -20,6 +20,8 @@
 - Reviewed repo's test result: The test failed as well because their code similarly doesn't handle how code blocks affect the URL. <br>
 ![failed test](photos/snippet1_other.png)
 <br><br>
-- I think there is a small code change that would make the program work for this snippet. The program could include an indexOf check for the "`" character. 
+- I think there is a small code change that would make the program work for this snippet. The program could include an indexOf check for the "\`" character and then a `continue` statement, which would take less than 10 lines of code. 
+<br><br>
 
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
+## Snippet 2
+- The program should print []
